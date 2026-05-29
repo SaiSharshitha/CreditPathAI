@@ -65,10 +65,6 @@ CreditPathAI/
 │   ├── src/
 │   ├── package.json
 │
-│── docs/
-│   ├── report.pdf
-│   ├── website.pdf
-│
 │── README.md
 
 ---
