@@ -1,4 +1,4 @@
-# 🚀 CreditPath AI
+# CreditPath AI
 
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI%200.115+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/Frontend-React%2019%20%2B%20Vite-61DAFB.svg?logo=react&logoColor=black)](https://react.dev)
@@ -11,7 +11,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 - [Architecture & System Design](#-architecture--system-design)
 - [Key Features](#-key-features)
   - [1. Borrower Portal (Retail Experience)](#1-borrower-portal-retail-experience)
@@ -32,7 +32,7 @@
 
 ---
 
-## 🏛️ Architecture & System Design
+## Architecture & System Design
 
 ```mermaid
 flowchart TD
@@ -77,7 +77,7 @@ flowchart TD
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 ### 1. Borrower Portal (Retail Experience)
 - **Multi-Factor Risk Assessment**: Evaluates credit score, annual income, loan amount requested, debt-to-income (DTI), and missed payment records.
@@ -103,7 +103,7 @@ flowchart TD
 
 ---
 
-## 📐 Risk Scoring & Mathematical Methodology
+## Risk Scoring & Mathematical Methodology
 
 ### 1. LightGBM Probability Normalization
 The machine learning model (`credit_risk_model_lgbm.pkl`) was trained on 36 z-score normalized risk features. The inference service uses empirical dataset statistics $(\mu, \sigma)$ from `loan_data_sample.csv` to map raw production inputs into standardized feature space before evaluation:
@@ -118,7 +118,7 @@ $$\text{Expected Loss} = \text{PD} \times \text{EAD} \times \text{LGD}$$
 
 ---
 
-## 🔒 Enterprise Security & RBAC
+## Enterprise Security & RBAC
 
 | Security Control | Implementation Standard |
 | :--- | :--- |
@@ -131,7 +131,7 @@ $$\text{Expected Loss} = \text{PD} \times \text{EAD} \times \text{LGD}$$
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Python 3.10+, FastAPI, SQLAlchemy 2.0, Pydantic v2, PyJWT, Bcrypt, LightGBM, Scikit-learn, Pandas, NumPy.
 - **Frontend**: React 19, Vite, Recharts, Axios, React Router v7.
@@ -140,7 +140,7 @@ $$\text{Expected Loss} = \text{PD} \times \text{EAD} \times \text{LGD}$$
 
 ---
 
-## 📂 Project Directory Structure
+## Project Directory Structure
 
 ```
 CreditPathAI/
@@ -203,7 +203,7 @@ CreditPathAI/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Python**: Version `3.10` or higher (`3.11`, `3.12`, `3.13`, `3.14` supported).
@@ -261,7 +261,7 @@ The frontend application will be available at:
 
 ---
 
-## 🔑 Demo Credentials
+## Demo Credentials
 
 The backend automatically seeds three role-specific accounts on first launch for immediate testing:
 
@@ -275,7 +275,7 @@ The backend automatically seeds three role-specific accounts on first launch for
 
 ---
 
-## 🧪 Automated Testing Suite
+## Automated Testing Suite
 
 CreditPath AI includes automated test suites covering backend endpoints, authentication, authorization, Basel II mathematical boundaries, formula injection mitigation, and frontend UI components.
 
@@ -306,7 +306,7 @@ npm test
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 Interactive API documentation with request schemas and execution sandboxes is available at `http://127.0.0.1:8000/docs`.
 
@@ -331,5 +331,5 @@ Interactive API documentation with request schemas and execution sandboxes is av
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the [MIT License](LICENSE).
